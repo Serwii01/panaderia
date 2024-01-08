@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Links de la fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="listas.js"></script>
+    <title>Roma - Agencia de viajes</title>
+    <link rel="icon" type="image/png" href="img\logo.png">
+</head>
+<body><!-- titulo de la ciudad hecho con arrays-->
+    <h1 id="titulodestino"><script>document.write(ciudades[3])</script></h1>
+    <div class="destino">
+        <div><!--mapa con api de google-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.35442519918!2d12.371187415219705!3d41.91020879232606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRoma%2C%20Italia!5e0!3m2!1ses!2ses!4v1699358009347!5m2!1ses!2ses" width="45%" height="600px" style="border:1; border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+        <div>
+        <script>//texto sobre la ciudad con arrays//
+            document.write('La ciudad de <em><b>' + ciudades[3] + '</b></em> Eterna, cautiva con sus vestigios de gloria antigua y su encanto contemporáneo. Desde el majestuoso Coliseo hasta las pintorescas calles adoquinadas, cada rincón respira historia y pasión. Un lugar donde el arte, la cultura y la gastronomía se entrelazan, creando una experiencia inolvidable.')
+        </script>
+        <div id="destino2"><br>
+        <div>
+            <center>
+        <form action="reserva.html" method="post" id="form"><!--formulario de reserva-->
+            <center>
+            <h1>Reserva ya!</h1>
+            </center>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre3" name="nombre" required><br>
+    
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo3" name="correo" required><br>
+    
+            <label for="fecha_inicio">Fecha de Inicio:</label>
+            <input type="date" id="fecha_inicio3" name="fecha_inicio3" required><br>
+    
+            <label for="fecha_fin">Fecha de Fin:</label>
+            <input type="date" id="fecha_fin3" name="fecha_fin" required><br>
+    
+            <label for="destino">Destino:</label>
+            <select id="destino3" name="tipo_transporte">
+                <option value="Londres">Londres</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Paris">Paris</option>
+                <option value="Roma">Roma</option>
+            </select><br><br>
+            <button onclick="imprimirform()" id="botonform">Enviar</button><br><br>
+        </form>
+            </center>
+    </div>
+    </div>
+        <script>//funcion que guarda los datos de reserva//
+            function imprimirform(){
+                var nombre3 = document.getElementById("nombre3").value;
+                var correo3 = document.getElementById("correo3").value;
+                var fecha_inicio3 = document.getElementById("fecha_inicio3").value;
+                var fecha_fin3 = document.getElementById("fecha_fin3").value;
+                var destino3 = document.getElementById("destino3").value;
+
+                localStorage.setItem("nombre3", nombre3)
+                localStorage.setItem("correo3", correo3)
+                localStorage.setItem("fecha_inicio3", fecha_inicio3)
+                localStorage.setItem("fecha_fin3", fecha_fin3)
+                localStorage.setItem("destino3", destino3)
+
+                window.location.href = "reserva.html"
+            }
+        </script>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container"><!--pie de pagina con link al inicio-->
+        <div class="footer-content">
+            <a href="index1.html">
+                <img src="img/logo.png" alt="Logo de la Agencia de Viajes">
+                </a>
+            <p>&copy; 2023 Agencia de Viajes. Sergio Fernández Morales.</p>
+        </div>
+    </div>
+</footer>
+</html>

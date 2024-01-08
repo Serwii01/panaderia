@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfil Personal</title>
+    <style>
+        /* Inserta tus estilos CSS aquí */
+
+        header {
+            background-color: lightblue;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            width: 100%;
+        }
+
+        #barralateral {
+            list-style: none;
+            background-color: orange;
+            width: 200px;
+            padding: 20px;
+            height: 900px;
+        }
+
+        footer {
+            background-color: lightgreen;
+            text-align: center;
+            height: 100px;
+            align-items: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            padding: 20px;
+        }
+
+        #padre {
+            display: flex;
+        }
+
+        .hijos {
+            width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nombre del Alumno</h1>
+    </header>
+    <div id="padre">
+        <ul id="barralateral">
+            <li><a href="#informacion">Información Personal</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+
+        <section id="hijo1" class="hijos">
+            <h2>Información Personal</h2>
+            <p>Descripción breve del alumno, intereses, hobbies, etc.</p>
+        </section>
+
+        <section id="hijo2" class="hijos">
+            <h2>Educación</h2>
+            <ul>
+                <li>Instituto o Universidad</li>
+                <li>Grado o Curso</li>
+                <!-- Más educación según sea necesario -->
+            </ul>
+        </section>
+
+        <section id="hijo3" class="hijos">
+            <h2>Proyectos Realizados</h2>
+            <!-- Lista de proyectos o trabajos realizados -->
+        </section>
+    </div>
+
+    <footer>
+        <p>Contacto: email@example.com</p>
+    </footer>
+</body>
+</html>

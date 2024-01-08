@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Links de la fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="listas.js"></script>
+    <title>Reserva - Agencia de viajes</title>
+    <link rel="icon" type="image/png" href="img\logo.png">
+</head>
+<header>
+    <h1>Has realizado tu reserva correctamente!</h1>
+    <a href="index1.html">Vuelve al inicio!</a>
+</header>
+<body>
+    <br>
+    <div id="padrereserva">
+    <div>
+        <h1>Estos son los datos de tu reserva:</h1><br><br>
+    <script style="text-align: justify"> //script que recoge los datos guardados del formulario y los imprime//
+        var nombre3 = localStorage.getItem("nombre3");
+        var correo3 = localStorage.getItem("correo3");
+        var fecha_inicio3 = localStorage.getItem("fecha_inicio3");
+        var fecha_fin3 = localStorage.getItem("fecha_fin3");
+        var destino3 = localStorage.getItem("destino3");
+    
+        document.write('Nombre: ' + nombre3 + '<br>');
+        document.write('Correo: ' + correo3 + '<br>');
+        document.write('Fecha de inicio: ' + fecha_inicio3 + '<br>');
+        document.write('Fecha de fin: ' + fecha_fin3 + '<br>');
+        document.write('Destino: ' + destino3 + '<br>');
+    </script>
+    </div>
+    <div>
+        <h2>Tu billete:</h2>
+        <img src="img\billete.jpg" alt="billete">
+    </div>
+</div><br><br>
+</body>
+<footer><!--pie de pagina con link al inicio-->
+    <div class="container">
+        <div class="footer-content">
+            <a href="index1.html">
+                <img src="img/logo.png" alt="Logo de la Agencia de Viajes">
+                </a>
+            <p>&copy; 2023 Agencia de Viajes. Sergio Fernández Morales.</p>
+        </div>
+    </div>
+</footer>
+</html>
