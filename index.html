@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head><br>
+<body>
+    <div class="header">
+        <div>
+            <h1 id="titulo">Panadería</h1>
+        </div>
+        <div>
+            <nav>
+                <li>
+                    <a href="#panes">Panes</a>
+                    <a href="#tartas">Tartas</a>
+                    <a href="#footer">Contacto</a>
+                </li>
+            </nav>
+        </div>
+        <div id="social">
+            <p><a href="perfil.html?nombre=" id="enlacePerfil">
+                <script>
+                    var storedNombre = localStorage.getItem('nombre');
+                    document.getElementById('enlacePerfil').href += encodeURIComponent(storedNombre);
+                    document.write(storedNombre);
+                </script>
+            </a></p>
+            <img src="img/fperfil.jpg" alt="Foto de perfil" id="fperfil">
+        </div>
+    </div>
+    <div class="seccion" id="panes">
+        <h2> Panes</h2>
+        <div class="contenedor">
+            <div class="cuadros">
+                <img src="img/espelta.webp" alt="">
+                <h3>Pan de Espelta</h3>
+                <p class="precios">4€/ud</p>
+                <p class="disponibles">Disponible</p>
+            </div>
+            <div class="cuadros">
+                <img src="img/arroz.webp" alt="">
+                <h3>Pan de Arroz</h3>
+                <p class="precios">3.5€/ud</p>
+                <p class="disponibles">Disponible</p>
+            </div>
+            <div class="cuadros">
+                <img src="img/centeno.webp" alt="">
+                <h3>Pan de Centeno</h3>
+                <p class="precios">3€/ud</p>
+                <p class="no_disponible">No disponible</p>
+            </div>
+            <div class="cuadros">
+                <img src="img/mollete.webp" alt="">
+                <h3>Pan de Mollete</h3>
+                <p class="precios">1.5€/ud</p>
+                <p class="no_disponible">No disponible</p>
+            </div>
+            <div class="cuadros">
+                <img src="img/sarraceno.webp" alt="">
+                <h3>Pan de Sarraceno</h3>
+                <p class="precios">5€/ud</p>
+                <p class="disponibles">Disponible</p>
+            </div>
+            <div class="cuadros">
+                <img src="img/trigo.webp" alt="">
+                <h3>Pan de Trigo</h3>
+                <p class="precios">2€/ud</p>
+                <p class="no_disponible">No disponible</p>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="seccion" id="tartas">
+        <h2> Tartas</h2>
+        <div class="contenedor">
+            <div class="cuadros">
+                <img src="img/Pepibuena-1-C-1536x1536.jpg.webp" alt="">
+                <h3>Tarta Estándar</h3>
+                <p class="precios">15€/ud</p>
+                <p class="no_disponible">No disponible</p>
+            </div>
+            <div class="cuadros">
+                <img src="img/Panettone-1-Cuad-1536x1536.jpg.webp" alt="">
+                <h3>Tarta Panettone</h3>
+                <p class="precios">12€/ud</p>
+                <p class="no_disponible">No disponible</p>
+            </div>
+            <div class="cuadros">
+                <img src="img/Kinder1-CUAD-600x600.jpg.webp" alt="">
+                <h3>Tarta Kinder</h3>
+                <p class="precios">25€/ud</p>
+                <p class="no_disponible">No disponible</p>
+            </div>
+            <div class="cuadros">
+                <img src="img/Lemon-pie-1-Cuadrada-600x600.jpg.webp" alt="">
+                <h3>Tarta de Limón</h3>
+                <p class="precios">18€/ud</p>
+                <p class="disponibles">Disponible</p>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="footer" id="footer">
+        <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101459.41911382916!2d-6.037460147390963!3d37.37547858813517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1114be6291%3A0x34f018621cfe5648!2sSevilla!5e0!3m2!1ses!2ses!4v1706090920235!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="contactos">
+            <ul>
+                <li>+34 673 783 906</li>
+                <li>panaderia@panaderia.com</li>
+            </ul>
+        </div>
+    </div><br><br>  
+</body>
+</html>
