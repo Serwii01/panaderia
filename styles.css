@@ -1,0 +1,156 @@
+body{
+padding: 30px;
+width: 95%;
+margin: auto;
+background-color: #a87e23;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0px;
+}
+
+.header img{
+    width: 75px;
+    border-radius: 50%;
+}
+
+.seccion {
+    text-align: left; 
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    margin: auto;
+    justify-content: center;
+    align-items: center; 
+    grid-row-gap: 40px;
+}
+
+.cuadros{
+    border: solid 1px black;
+    border-radius: 25px;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.cuadros:hover{
+    transition: 0.5s;
+    transform: translateY(-4%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+.cuadros img{
+    border-radius: 25px;
+    width: 300px;
+}
+
+.compra{
+color: grey;
+}
+
+@media (max-width: 1300px){
+    .cuadros img{
+        width: 270px;
+    }
+}
+
+@media (max-width: 1240px){
+    .cuadros img{
+        width: 260px;
+    }
+}
+
+@media (max-width: 1200px){
+    .cuadros img{
+        width: 250px;
+    }
+}
+
+@media (max-width: 1130px){
+    .cuadros img{
+        width: 240px;
+    }
+}
+
+@media (max-width: 1050px){
+    .cuadros img{
+        width: 230px;
+    }
+}
+
+@media (max-width: 992px){
+    .cuadros img{
+        width: 200px;
+    }
+    
+    .seccion{
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 900px){
+    .cuadros img{
+        width: 190px
+    }
+    .seccion{
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 850px){
+    .cuadros img{
+        width: 180px
+    }
+    .seccion{
+        width: 95%;
+        margin: auto;
+    }
+    .footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    iframe{
+        width: 95%;
+    }
+}
+
+@media (max-width: 800px){
+    .seccion{
+        width: 95%;
+        margin: auto;
+    }
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cuadros img{
+        width: 220px
+    }
+    iframe{
+        width: 90%;
+    }
+}
+
+@media (max-width: 670px) {
+    .contenedor {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    iframe{
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px){
+    .seccion{
+        width: 95%;
+        margin: auto;
+    }
+}
